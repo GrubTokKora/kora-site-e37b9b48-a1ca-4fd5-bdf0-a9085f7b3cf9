@@ -8,7 +8,7 @@ purpose: Homepage for Dre's Island Food Services, a Jamaican-rooted caterer serv
 sections:
 - `#top` — hero with tagline, quote and menu calls to action, Google rating
 - credentials strip: years of experience, guest capacity, training, award nomination
-- brand philosophy with two event photos
+- `#about` — brand story (about) with two event photos
 - `#experiences` "Four ways to bring the island to your table" — service style cards (no prices): Small Bites, Drop-off Feasts, Onsite Family-Style, The Chef's Table
 - `#menu` "From Miss Mavis' kitchen to your table" — signature dish plates with one-line descriptions (no prices): Braised Oxtail, Jerk Chicken, Jerk Wings, Curry Goat, Ackee & Saltfish, Jerk Salmon, Jerk Chicken Pasta, Rice & Peas
 - `#chef` — chef biography, credentials and portrait: Chef Andre, Miss Mavis, Sandals Resorts, Pasco County EDC
