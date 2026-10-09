@@ -1,0 +1,15 @@
+{
+  "name": "Dre's Island Food Services",
+  "short_name": "Dre's Island",
+  "icons": [
+    {
+      "src": "assets/logo/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#F8F3EA",
+  "background_color": "#F8F3EA",
+  "display": "standalone",
+  "start_url": "/"
+}
