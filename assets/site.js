@@ -35,6 +35,12 @@
     window.matchMedia('(min-width: 1024px)').addEventListener('change', function (m) { if (m.matches) setOpen(false); });
   }
 
+  /* The signature dishes are drawn by Kora from the menu data (kora:data:menu); give them the same staggered reveal. */
+  document.querySelectorAll('#menu .kora-menu__item').forEach(function (el, i) {
+    el.setAttribute('data-reveal', '');
+    if (i % 3) el.setAttribute('data-reveal-delay', String(i % 3));
+  });
+
   /* Scroll reveal: content is visible by default; only hidden once JS + motion are allowed. */
   var revealEls = document.querySelectorAll('[data-reveal]');
   if (!reduceMotion && 'IntersectionObserver' in window && revealEls.length) {

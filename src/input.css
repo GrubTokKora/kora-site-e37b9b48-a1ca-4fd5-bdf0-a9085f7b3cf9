@@ -215,14 +215,6 @@ em { font-style: italic; }
 .svc-foot { margin-top: 2.75rem; display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center; justify-content: space-between; color: var(--muted); }
 
 /* Signature menu */
-.menu-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
-.dish { text-align: center; }
-.dish-plate { background: #fff; border-radius: 50%; aspect-ratio: 1; overflow: hidden; box-shadow: 0 0 0 1px var(--line), 0 24px 40px -30px rgba(0, 0, 0, .4); transition: transform .5s var(--ease); }
-.dish:hover .dish-plate { transform: rotate(-4deg) scale(1.03); }
-.dish-plate img { width: 100%; height: 100%; object-fit: cover; }
-.dish h3 { margin-top: 1.1rem; font-size: clamp(1.3rem, 2vw, 1.6rem); }
-.dish p { margin-top: .35rem; font-size: .9rem; color: var(--muted); line-height: 1.5; }
-@media (min-width: 760px) { .menu-grid { grid-template-columns: repeat(4, 1fr); gap: 2.5rem 2rem; } }
 .menu-note { margin-top: 3.5rem; padding: 1.75rem; border: 1px solid var(--gold); border-radius: var(--radius); display: grid; gap: 1rem; align-items: center; background: var(--paper); }
 .menu-note p { color: var(--muted); }
 .menu-note strong { color: var(--ink); font: 600 1.35rem/1.2 var(--font-display); display: block; margin-bottom: .25rem; }
@@ -398,3 +390,18 @@ p a:not([class]), .mm-contact a, .mm-meta a { text-decoration: underline; text-u
 .notfound-lead { max-width: 36rem; margin-bottom: 2rem; }
 
 }
+
+/* Signature dishes: Kora draws them from the menu data into the kora:data:menu region (index.html). These rules
+   give the rendered cards the round plate look. Outside @layer on purpose: Kora's base menu style is unlayered
+   and would beat any layered rule. */
+#menu .kora-menu .kora-menu__section { margin: 0; }
+#menu .kora-menu .kora-menu__section-title { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+#menu .kora-menu .kora-menu__items { grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+#menu .kora-menu .kora-menu__item { display: block; text-align: center; border: 0; border-radius: 0; overflow: visible; }
+#menu .kora-menu .kora-menu__item-image { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; background: #fff; border-radius: 50%; box-shadow: 0 0 0 1px var(--line), 0 24px 40px -30px rgba(0, 0, 0, .4); transition: transform .5s var(--ease); }
+#menu .kora-menu .kora-menu__item:hover .kora-menu__item-image { transform: rotate(-4deg) scale(1.03); }
+#menu .kora-menu .kora-menu__item-body { padding: 0; }
+#menu .kora-menu .kora-menu__item-head { display: block; }
+#menu .kora-menu .kora-menu__item-name { margin-top: 1.1rem; font-family: var(--font-display); font-weight: 600; font-size: clamp(1.3rem, 2vw, 1.6rem); line-height: 1.05; }
+#menu .kora-menu .kora-menu__item-desc { margin-top: .35rem; font-size: .9rem; color: var(--muted); line-height: 1.5; opacity: 1; }
+@media (min-width: 760px) { #menu .kora-menu .kora-menu__items { grid-template-columns: repeat(4, 1fr); gap: 2.5rem 2rem; } }
