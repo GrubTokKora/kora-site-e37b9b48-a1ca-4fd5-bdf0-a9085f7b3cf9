@@ -20,8 +20,9 @@
   --color-surface: #FFFDF8;
   --color-border: #DDD5C6;
 
-  --font-heading: "Cormorant Garamond", "Times New Roman", serif;
-  --font-body: "Jost", "Helvetica Neue", Arial, sans-serif;
+  --font-heading: var(--kora-font-heading, "Cormorant Garamond"), "Times New Roman", serif;
+  --font-body: var(--kora-font-body, "Jost"), "Helvetica Neue", Arial, sans-serif;
+  --font-accent: var(--kora-font-accent, var(--font-heading)), var(--font-heading);
 }
 
 @layer components {
@@ -37,8 +38,8 @@
   --gold: #B08D57;
   --gold-text: #7E5F2C;
   --line: rgba(30, 28, 24, .12);
-  --font-display: "Cormorant Garamond", "Times New Roman", serif;
-  --font-body: "Jost", "Helvetica Neue", Arial, sans-serif;
+  --font-display: var(--font-heading);
+  --font-body: var(--kora-font-body, "Jost"), "Helvetica Neue", Arial, sans-serif;
   --shell: min(1240px, 100% - 2.5rem);
   --ease: cubic-bezier(.22, .61, .36, 1);
   --radius: 4px;
