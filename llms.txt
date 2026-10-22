@@ -1,6 +1,6 @@
 # Dre's Island Food Services
 
-> Dre's Island Food Services is a Dade City, Florida-based eatery offering island-inspired cuisine with the tagline 'Island flavor, served beautifully.'
+> Dre's Island Food Services is located at 15029 14th St in Dade City, FL 33523, offering island-inspired cuisine with the tagline "Island flavor, served beautifully."
 
 ## Services
 - Braised Oxtail
