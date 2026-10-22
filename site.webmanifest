@@ -3,9 +3,9 @@
   "short_name": "Dre's Island",
   "icons": [
     {
-      "src": "assets/logo/favicon.png",
+      "src": "https://quseprdus1.blob.core.windows.net/kora-business-images/social-media/e37b9b48-a1ca-4fd5-bdf0-a9085f7b3cf9/medialibrary/1792657293_ogmyok.jpg",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/jpeg"
     }
   ],
   "theme_color": "#F8F3EA",
